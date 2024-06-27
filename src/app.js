@@ -9,11 +9,11 @@ window.onload = function() {
   //write your code here
   console.log("Hello World");
 
-  document.querySelector("btn").addEventListener("click", () => {
-    document.querySelector("excuse").innerHTML = generateExcuse();
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#excuse").innerHTML = generateExcuse();
   });
 
-  document.querySelector("excuse").innerHTML = generateExcuse();
+  document.querySelector("#excuse").innerHTML = generateExcuse();
 };
 
 let generateExcuse = () => {
@@ -28,11 +28,12 @@ let generateExcuse = () => {
     "while I was praying"
   ];
 
-  let whoIndex = math.floor(Math.random() * who.length);
-  let actionIndex = math.floor(Math.random() * action.length);
-  let whatIndex = math.floor(Math.random() * what.length);
-  let whenIndex = math.floor(Math.random() * when.length);
+  let whoIndex = Math.floor(Math.random() * who.length);
+  let actionIndex = Math.floor(Math.random() * action.length);
+  let whatIndex = Math.floor(Math.random() * what.length);
+  let whenIndex = Math.floor(Math.random() * when.length);
   console.log(generateExcuse);
+
   return (
     who[whoIndex] +
     " " +
